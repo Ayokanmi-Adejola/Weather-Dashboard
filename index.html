@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Weather Dashboard</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <div class="header-controls">
+        <button id="theme-toggle" class="icon-btn" title="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button id="unit-toggle" class="unit-btn" title="Toggle temperature unit">°C</button>
+    </div>
+
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <div class="search-container">
+            <div class="autocomplete-container">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <div id="autocomplete-list" class="autocomplete-items hidden"></div>
+            </div>
+            <button id="search-btn">Search</button>
+            <button id="location-btn" title="Get current location"><i class="fas fa-location-dot"></i></button>
+            <button id="favorites-btn" title="Favorite cities"><i class="fas fa-heart"></i></button>
+        </div>
+
+        <div id="favorites-panel" class="favorites-panel hidden">
+            <h3>Favorite Cities</h3>
+            <div id="favorites-list" class="favorites-list"></div>
+            <div class="favorites-empty hidden">
+                <p>No favorite cities yet. Search for a city and click the heart icon to add it to favorites.</p>
+            </div>
+        </div>
+
+        <div class="weather-container">
+            <div id="weather-bg" class="weather-background"></div>
+            <div class="current-weather">
+                <div id="weather-info" class="hidden">
+                    <div class="city-header">
+                        <h2 id="city-name">City Name</h2>
+                        <button id="add-favorite" class="icon-btn" title="Add to favorites">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="weather-details">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <div class="temperature">
+                            <h3 id="temperature">--°C</h3>
+                            <p id="description">Description</p>
+                        </div>
+                    </div>
+                    <div class="weather-data">
+                        <div class="data-item">
+                            <i class="fas fa-temperature-high"></i>
+                            <div>
+                                <p>Feels Like</p>
+                                <p id="feels-like">--°C</p>
+                            </div>
+                        </div>
+                        <div class="data-item">
+                            <i class="fas fa-droplet"></i>
+                            <div>
+                                <p>Humidity</p>
+                                <p id="humidity">--%</p>
+                            </div>
+                        </div>
+                        <div class="data-item">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <p>Wind Speed</p>
+                                <p id="wind-speed">-- m/s</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-data">
+                        <div class="data-row">
+                            <div class="data-item">
+                                <i class="fas fa-compress-alt"></i>
+                                <div>
+                                    <p>Pressure</p>
+                                    <p id="pressure">-- hPa</p>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-eye"></i>
+                                <div>
+                                    <p>Visibility</p>
+                                    <p id="visibility">-- km</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-row">
+                            <div class="data-item">
+                                <i class="fas fa-sun"></i>
+                                <div>
+                                    <p>Sunrise</p>
+                                    <p id="sunrise">--:--</p>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-moon"></i>
+                                <div>
+                                    <p>Sunset</p>
+                                    <p id="sunset">--:--</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="loading" class="hidden">
+                    <p>Loading weather data...</p>
+                </div>
+                <div id="error-message" class="hidden">
+                    <p>City not found. Please try again.</p>
+                </div>
+            </div>
+
+            <div class="hourly-container">
+                <h3>Hourly Forecast</h3>
+                <div class="hourly-scroll">
+                    <div id="hourly-forecast" class="hourly-forecast"></div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast" class="forecast"></div>
+            </div>
+
+            <div id="map-container" class="map-container hidden">
+                <h3>Weather Map</h3>
+                <div id="weather-map"></div>
+                <div class="map-controls">
+                    <button id="temp-layer" class="map-btn active">Temperature</button>
+                    <button id="clouds-layer" class="map-btn">Clouds</button>
+                    <button id="precipitation-layer" class="map-btn">Precipitation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="creator-info">
+            <img src="Hey why.jpg" alt="AYOKANMI ADEJOLA" class="profile-pic" id="profile-pic" title="AYOKANMI ADEJOLA">
+            <p>Created by AYOKANMI ADEJOLA | Weather data from OpenWeatherMap</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
