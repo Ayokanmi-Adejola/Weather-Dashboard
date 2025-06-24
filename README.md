@@ -2,7 +2,7 @@
 
 A comprehensive, responsive weather dashboard built with vanilla HTML, CSS, and JavaScript. This application provides detailed weather information for any location worldwide with a clean, modern interface.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c40bae6e-1ebd-43d6-9e44-d7e55fbf8c04)
 
 
 ## Features
