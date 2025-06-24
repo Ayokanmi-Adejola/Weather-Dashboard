@@ -2,6 +2,9 @@
 
 A comprehensive, responsive weather dashboard built with vanilla HTML, CSS, and JavaScript. This application provides detailed weather information for any location worldwide with a clean, modern interface.
 
+![Uploading image.png…]()
+
+
 ## Features
 
 - **Current Weather Conditions**: Detailed display of current temperature, weather description, and feels-like temperature
